@@ -1,0 +1,340 @@
+body{
+	bacground-color: #000;
+}
+/*NAME ON INDEX PAGE */
+.name{
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	text-align: center;
+	font-size: 6rem;
+	margin-top: 7vh;
+	color: #fff;
+}
+
+.about{
+	font-family: "Anton", sans-serif;
+ 	font-weight: 400;
+  	font-style: normal;
+  	font-optical-sizing: auto;
+	text-align: center;
+	font-size: 10rem;
+	margin-top: 7vh;
+	color: #fff;
+}
+
+.center-content{
+	justify-content: center;
+}
+
+
+/*Font styling*/
+
+.script{
+	font-family: "Pinyon Script", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+  	text-align: center;
+  	color: #fff;
+  	font-size: 3rem;
+}
+
+.handwritting{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.white-paragraph{
+	color: #fff;
+	 font-family: "Quicksand", sans-serif;
+  	 font-weight: 200;
+  	 font-style: normal;
+  	 font-size: 1rem;
+}
+
+.white-showcase{
+	font-family: "Cormorant Garamond", serif;
+    font-size: 28px; /* Slightly larger font size for better visibility */
+    font-style: normal;
+    color: #fff;
+    padding: 30px;
+    padding-top: 0px;
+    font-weight: 500; /* Bolder weight for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow for better contrast */
+    letter-spacing: 1px; /* Slightly increased spacing for a cleaner look */
+    line-height: 1.6; /* Improves readability */
+}
+
+.section-title{
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 7vh;
+	color: #fff;
+}
+
+.project-title{
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	text-align: left;
+	font-size: 3rem;
+	margin-top: 2vh;
+	color: #fff;
+}
+
+.project-heading{
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	text-align: left;
+	font-size: 2rem;
+	margin-top: 2vh;
+	color: #fff;
+	text-align: center;
+}
+
+.section-subheading{
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	font-size: 2rem;
+	color: #fff;
+
+}
+
+.extra-bottom-padding{
+	padding-bottom: 5rem;
+}
+
+.extra-top-padding{
+	padding-top: 10vh;
+}
+
+/*Background classes*/
+.black-background{
+	background-color: #000;
+}
+
+
+/*Section padding */
+.section-padding{
+	padding: 3rem;
+}
+
+#skills-speacialties{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+
+
+/*SCROLL APPEAR JS CSS*/
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+    }
+.visible {
+    opacity: 1;
+}
+
+.scroll-appear {
+  position: relative;
+  transition: opacity 0.6s ease-out;
+}
+
+.scroll-appear::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 128, 0, 0.3); /* semi-transparent green */
+  pointer-events: none; /* allows clicks to go through */
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+  z-index: 1;
+}
+
+.scroll-appear.visible::before {
+  opacity: 0; /* hide overlay when in view */
+}
+
+.scroll-appear > * {
+  position: relative;
+  z-index: 2; /* keep content above overlay */
+}
+
+
+
+.paragraph-padding{
+	padding: 20px;
+	padding-top: 5px;
+}
+
+
+/*Lines off the sides*/
+.section-title-wrapper {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin: 40px 0; /* Adjust spacing as needed */
+}
+
+
+
+
+.section-title-wrapper::before,
+.section-title-wrapper::after {
+	content: "";
+	flex: 1;
+	border-bottom: 0.5px solid #fff; /* Adjust color as needed */
+	margin: 0 20px; /* Space between text and lines */
+}
+
+@media (max-width: 600px) {
+	.section-title-wrapper {
+		display: block;
+		text-align: center;
+	}
+
+	.section-title-wrapper::before,
+	.section-title-wrapper::after {
+		content: none;
+		display: none;
+	}
+}
+
+
+.section-title {
+	color: #fff; /* Adjust if needed */
+	margin: 0;
+	white-space: nowrap;
+}
+
+
+.jumbotron-fluid {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.3) 100%),url('../_images/index-images/bg-home3.png');
+        background-size: cover;
+        background-position: bottom center;
+        height: 150vh;
+}
+
+#project-showcase-2 .jumbotron-fluid {
+    background-image: url('../_images/index-images/bytes-home.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+#see-more .section-title{
+	font-size: 2rem;
+}
+
+#see-more h4{
+	color: #fff;
+	padding-top: 15px;
+}
+
+hr{
+	color: #fff;
+
+}
+
+
+.col-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-link .hover-box {
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-link:hover .hover-box {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.white-paragraph a{
+	color: white;
+}
+
+.nav-bar{
+	background-color: #000;
+}
+
+
+#spotify-code{
+	width: 50vw;
+	align-items: center;
+	border-radius: 15%;
+}
+
+
+/*PORTFOLIO IMAGE HOVER TRANSITION*/
+
+
+.image-hover-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image-hover-wrapper img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-hover-wrapper:hover .image-hover {
+  opacity: 1;
+}
+
+.image-hover-wrapper:hover .image-default {
+  opacity: 0;
+}
+
+.display-img{
+	width: 100%;
+}
+
+.project-info{
+
+	align-content: center;
+	justify-content: left;
+}
+
+.project-subtitle{
+font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  color: rgb(151, 150, 150);
+  font-weight: 100;
+}
+
+.project-sub{
+	font-family: "Lora", serif;
+	  font-optical-sizing: auto;
+	  font-style: normal;
+	  color: rgb(208, 201, 201);
+	  font-weight: 100;
+	  text-align: center;
+	}
+footer a{
+	padding: 10px;
+}
+
+
+
+
